@@ -1,4 +1,4 @@
-//input data into array filled with objects
+//input data into array filled with objects in a array
 //listed the movie names, rating, and if had seen before or waiting to see it
 var movies = [
     {
