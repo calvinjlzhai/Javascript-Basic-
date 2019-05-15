@@ -1,0 +1,12 @@
+// setting up the function 
+function sumOf(num){
+    //begin the sum at zero
+    var total = 0;
+    //loop from first index to the last index, increasing by  1
+    for(var i = 0; i < num.length; i++){
+    //total result in the total sum of all items 
+        total += num[i]
+    }
+    //return the sum of total
+    return total;
+}
