@@ -1,0 +1,12 @@
+//Setting up the function with the parameter arr
+function reverseArray(arr){
+    //setting up empty array for future storage
+    var newArray = [];
+    //begin at the last index and continue to progress to the first index
+    for(var i = arr.length - 1; i >= 0; i--){
+    //store items into the new array
+        newArray.push(arr[i]);
+    }
+    //print out the items in reverse order
+    return newArray;
+}
