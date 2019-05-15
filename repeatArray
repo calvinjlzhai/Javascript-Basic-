@@ -1,4 +1,5 @@
 //setting up the function
+//see if the array contain the same items
 function repeatArray(arr) {
 //setting up the first index as the base for comparing items inside the array
     var firstIndex = arr[0];
@@ -6,7 +7,7 @@ function repeatArray(arr) {
     for(var i = 0; i < arr.length; i++){
     //compare the item inside the array and if it matches first index
         if(arr[i] !== firstIndex ) {
-        //return this output if it is false
+        //return this output if array do not match first index
             return "The items inside array is not the same!"
         } 
     }
