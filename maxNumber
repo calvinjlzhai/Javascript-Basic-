@@ -1,4 +1,4 @@
-//setting up the function
+//setting up the function to find the biggest number of the array
 function maxNumber(digit) {
     //setting the first index as the base
     var max = digit[0];
