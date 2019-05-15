@@ -1,0 +1,47 @@
+
+  
+//Empty array for input
+var toDos = [];
+//Asking for the user input 
+var input = prompt("What would you like to do?");
+
+while(input !== "quit") {
+    //waiting for response and display the list
+    if(input === "list") {
+        listToDos();
+    // if user input new, it adds to the toDos list
+     } else if(input === "new"){
+        addToDos();
+    } else if(input === "delete") {
+        deleteToDos();
+    }
+
+    //ask user what they want to do next
+    input = prompt("What would you like to do?");
+}
+// if user input quit, then print this. 
+console.log("Ok, you exit the program!");
+
+
+
+function listToDos() {
+    console.log("**********");
+    toDos.forEach(function(todo, i) {
+        console.log(i + ": " + todo);
+    });
+        console.log("**********");
+}
+
+function addToDos() {
+    var newInput = prompt("What do you want to add?");
+        toDos.push(newInput);
+        console.log("added toDos");
+}
+function deleteToDos() {
+//ask for the index of toDo to be deleted
+        //then delete that toDo
+        var index = prompt("Enter index of toDo to delete");
+        // delete the toDo
+        toDos.splice(index,1);
+        console.log("Deleted toDos");
+}
