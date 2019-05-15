@@ -1,4 +1,5 @@
 //Setting up the function with the parameter arr
+//reverse the array in reverse order
 function reverseArray(arr){
     //setting up empty array for future storage
     var newArray = [];
