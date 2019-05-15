@@ -1,0 +1,15 @@
+//setting up the function
+function maxNumber(digit) {
+    //setting the first index as the base
+    var max = digit[0];
+    //loop every items and increase index by 1 
+    for(var i = 1; i < digit.length; i++ ){
+    //compare each index to the max for comparison
+        if(digit[i] > max){
+        //result in the biggest number of the array
+            max = digit[i]
+        }
+    }
+    //return the highest number of the array
+    return max
+}
