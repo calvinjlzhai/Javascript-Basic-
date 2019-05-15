@@ -1,10 +1,9 @@
-
-  
 //Empty array for input
 var toDos = [];
 //Asking for the user input 
 var input = prompt("What would you like to do?");
 
+//If user input is not "quit" then move on to next line
 while(input !== "quit") {
     //waiting for response and display the list
     if(input === "list") {
@@ -23,7 +22,7 @@ while(input !== "quit") {
 console.log("Ok, you exit the program!");
 
 
-
+// display the items inside the array
 function listToDos() {
     console.log("**********");
     toDos.forEach(function(todo, i) {
@@ -31,12 +30,13 @@ function listToDos() {
     });
         console.log("**********");
 }
-
+// adding to the current array
 function addToDos() {
     var newInput = prompt("What do you want to add?");
         toDos.push(newInput);
         console.log("added toDos");
 }
+// delete the user input index and update the array
 function deleteToDos() {
 //ask for the index of toDo to be deleted
         //then delete that toDo
