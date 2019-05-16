@@ -1,0 +1,13 @@
+//Setting up the object with empty properties
+var topFiveSongs = {};
+//Add the property called collection and adding data to the array
+topTenSongs.collection = ["Dancing with A Stranger by Sam Smith", "Bad Guy by Billie Ellish", "Sucker by Jonas Brothers", "Middle Child by J.cole", "Me! by Taylor Swift"];
+
+//Creating a property with method (function) to print out the collection property array
+data.print = function() {
+    //this represent as the object and getting data from the property collection and loop through the array
+    this.collection.forEach(function(el){
+    // print out the data in console
+    console.log(el)
+    });
+}
